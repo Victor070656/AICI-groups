@@ -1,3 +1,5 @@
+import { Clock, PlayCircle, Calendar } from "lucide-react";
+
 const courses = [
   {
     title: "Real Estate Sales Fundamentals",
@@ -77,16 +79,14 @@ export default function CourseGrid() {
 
             {/* Course Info */}
             <div className="flex items-center text-sm text-gray-500  mt-auto pt-4 border-t border-gray-200 ">
-              <span className="material-symbols-outlined text-base mr-2">
-                schedule
-              </span>
+              <Clock className="w-4 h-4 mr-2" />
               <span>{course.duration}</span>
               <span className="mx-3">·</span>
-              <span className="material-symbols-outlined text-base mr-2">
-                {course.availability === "On-demand"
-                  ? "ondemand_video"
-                  : "calendar_today"}
-              </span>
+              {course.availability === "On-demand" ? (
+                <PlayCircle className="w-4 h-4 mr-2" />
+              ) : (
+                <Calendar className="w-4 h-4 mr-2" />
+              )}
               <span>{course.availability}</span>
             </div>
 

@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { ChevronDown } from "lucide-react";
 
 export default function PropertyFilters() {
   const [propertyType, setPropertyType] = useState("all");
@@ -26,33 +27,25 @@ export default function PropertyFilters() {
         {/* Property Type */}
         <button className="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-white pl-4 pr-3 text-sm font-medium text-gray-900 ring-1 ring-inset ring-gray-200 hover:bg-gray-50 transition-colors">
           {propertyType === "all" ? "Property Type" : propertyType}
-          <span className="material-symbols-outlined text-xl text-gray-600">
-            expand_more
-          </span>
+          <ChevronDown className="w-5 h-5 text-gray-600" />
         </button>
 
         {/* Location */}
         <button className="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-white  pl-4 pr-3 text-sm font-medium text-gray-900  ring-1 ring-inset ring-gray-200  hover:bg-gray-50  transition-colors">
           {location === "all" ? "Location" : location}
-          <span className="material-symbols-outlined text-xl text-gray-600 ">
-            expand_more
-          </span>
+          <ChevronDown className="w-5 h-5 text-gray-600" />
         </button>
 
         {/* Price */}
         <button className="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-white  pl-4 pr-3 text-sm font-medium text-gray-900  ring-1 ring-inset ring-gray-200  hover:bg-gray-50  transition-colors">
           {priceRange === "all" ? "Price" : priceRange}
-          <span className="material-symbols-outlined text-xl text-gray-600 ">
-            expand_more
-          </span>
+          <ChevronDown className="w-5 h-5 text-gray-600" />
         </button>
 
         {/* Bedrooms */}
         <button className="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-white  pl-4 pr-3 text-sm font-medium text-gray-900  ring-1 ring-inset ring-gray-200  hover:bg-gray-50  transition-colors">
           {bedrooms === "all" ? "Bedrooms" : bedrooms}
-          <span className="material-symbols-outlined text-xl text-gray-600 ">
-            expand_more
-          </span>
+          <ChevronDown className="w-5 h-5 text-gray-600" />
         </button>
 
         <div className="flex-grow"></div>

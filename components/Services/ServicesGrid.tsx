@@ -1,36 +1,38 @@
+import { Building, Building2, BarChart3, TrendingUp, Scale, Home } from "lucide-react";
+
 const services = [
   {
-    icon: "real_estate_agent",
+    icon: Building,
     title: "Real Estate Brokerage",
     description:
       "Expert guidance for buying, selling, and leasing residential and commercial properties.",
   },
   {
-    icon: "apartment",
+    icon: Building2,
     title: "Property Management",
     description:
       "Comprehensive services for property owners to maximize returns and ensure peace of mind.",
   },
   {
-    icon: "analytics",
+    icon: BarChart3,
     title: "Market Analysis & Research",
     description:
       "Data-driven insights and detailed market reports to inform your investment decisions.",
   },
   {
-    icon: "trending_up",
+    icon: TrendingUp,
     title: "Investment Consultancy",
     description:
       "Strategic advisory services for building and managing a successful real estate portfolio.",
   },
   {
-    icon: "gavel",
+    icon: Scale,
     title: "Legal & Financial Advisory",
     description:
       "Access our network of partners for seamless legal and financial guidance through every transaction.",
   },
   {
-    icon: "foundation",
+    icon: Home,
     title: "Development & Planning",
     description:
       "End-to-end support for new construction projects, from initial concept to final execution.",
@@ -52,10 +54,8 @@ export default function ServicesGrid() {
             key={index}
             className="flex flex-col gap-4 rounded-xl border border-gray-200 bg-white p-6 text-center items-center shadow-sm hover:shadow-md transition-all duration-300 group"
           >
-            <div className="text-red-600 text-4xl transform transition-transform duration-300 group-hover:scale-110">
-              <span className="material-symbols-outlined !text-4xl">
-                {service.icon}
-              </span>
+            <div className="text-red-600 transform transition-transform duration-300 group-hover:scale-110">
+              <service.icon className="w-10 h-10" />
             </div>
             <div className="flex flex-col gap-2">
               <h3 className="text-blue-800 text-xl font-bold font-display">

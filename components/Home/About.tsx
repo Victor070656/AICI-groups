@@ -2,22 +2,22 @@ export default function About() {
   return (
     <section
       id="about"
-      className="px-6 sm:px-8 lg:px-16 py-20 lg:py-32 bg-white dark:bg-gray-950"
+      className="px-6 sm:px-8 lg:px-16 py-20 lg:py-32 bg-white"
     >
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div className="flex flex-col gap-8">
             <div>
-              <span className="inline-block text-primary dark:text-accent font-semibold text-sm tracking-widest uppercase mb-4">
+              <span className="inline-block text-red-600 font-semibold text-sm tracking-widest uppercase mb-4">
                 About Our Company
               </span>
-              <h2 className="font-display text-gray-900 dark:text-white text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight">
+              <h2 className="font-display text-gray-900  text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight">
                 Welcome to <span className="gradient-text">AICI Group</span>
               </h2>
-              <div className="h-1 w-24 bg-gradient-to-r from-primary to-secondary rounded-full mt-6"></div>
+              <div className="h-1 w-24 bg-gradient-to-r from-red-600 to-blue-800 rounded-full mt-6"></div>
             </div>
 
-            <p className="font-sans text-gray-600 dark:text-gray-300 text-lg font-light leading-relaxed">
+            <p className="font-sans text-gray-600  text-lg font-light leading-relaxed">
               AICI Group is a premier real estate and consultancy firm dedicated
               to delivering exceptional value to our clients. With a rich
               history of integrity and a future-focused vision, we specialize in
@@ -25,7 +25,7 @@ export default function About() {
               services.
             </p>
 
-            <p className="font-sans text-gray-600 dark:text-gray-300 text-lg font-light leading-relaxed">
+            <p className="font-sans text-gray-600  text-lg font-light leading-relaxed">
               Our commitment to excellence ensures we achieve outstanding
               results in every project we undertake, building lasting
               partnerships that stand the test of time.
@@ -37,7 +37,7 @@ export default function About() {
                 <div className="font-display text-4xl font-bold gradient-text">
                   25+
                 </div>
-                <div className="text-gray-600 dark:text-gray-400 text-sm mt-2">
+                <div className="text-gray-600 text-sm mt-2">
                   Years Experience
                 </div>
               </div>
@@ -45,7 +45,7 @@ export default function About() {
                 <div className="font-display text-4xl font-bold gradient-text">
                   500+
                 </div>
-                <div className="text-gray-600 dark:text-gray-400 text-sm mt-2">
+                <div className="text-gray-600 text-sm mt-2">
                   Projects
                 </div>
               </div>
@@ -53,14 +53,14 @@ export default function About() {
                 <div className="font-display text-4xl font-bold gradient-text">
                   98%
                 </div>
-                <div className="text-gray-600 dark:text-gray-400 text-sm mt-2">
+                <div className="text-gray-600 text-sm mt-2">
                   Satisfaction
                 </div>
               </div>
             </div>
 
             <div>
-              <button className="btn-premium group flex items-center gap-3 overflow-hidden rounded-full h-14 px-10 bg-gradient-to-r from-primary to-secondary text-white text-base font-semibold shadow-xl">
+              <button className="btn-premium group flex items-center gap-3 overflow-hidden rounded-full h-14 px-10 bg-gradient-to-r from-red-600 to-blue-800 text-white text-base font-semibold shadow-xl">
                 <span>Discover Our Story</span>
                 <svg
                   className="w-5 h-5 transform transition-transform group-hover:translate-x-1"
@@ -86,16 +86,16 @@ export default function About() {
                 className="w-full h-[500px] lg:h-[600px] bg-center bg-no-repeat bg-cover"
                 style={{
                   backgroundImage:
-                    'url("https://lh3.googleusercontent.com/aida-public/AB6AXuCoe-GHi71n9WH_0ZRQ7scLHNk6QO-7BQle_9-rkrmf14MQxlC_mQA-2RlGXhmQUBeG20JfbSDMLNqxuVLCq_1OSIVLQOoyEF-VGkGKel2UY9hezVLhHht_0evwkSA1jxsniA60l7M8wTcgScnEb8RuYR4O-Tc_LLoC968IenphA5lwjW1OCW2RfNtsikTNBlUr1AckyXXb-Mk9acA3nVPaqOZweOLXM_wzpE55ZpJ9z42_i7yGBgkX4mGNmYD8uUTmMEc8GnCQEZc")',
+                    'url("/work/img/10.jpeg")',
                 }}
               ></div>
-              <div className="absolute inset-0 bg-gradient-to-t from-secondary/30 to-transparent"></div>
+              <div className="absolute inset-0 bg-gradient-to-t from-blue-to-blue-800/30 to-transparent"></div>
             </div>
 
             {/* Floating card */}
-            <div className="absolute -bottom-8 -left-8 bg-white dark:bg-gray-800 backdrop-blur-md rounded-2xl p-6 shadow-2xl max-w-xs hover-lift border border-gray-100 dark:border-gray-700">
+            <div className="absolute -bottom-8 -left-8 bg-white  backdrop-blur-md rounded-2xl p-6 shadow-2xl max-w-xs hover-lift border border-gray-100 ">
               <div className="flex items-center gap-4">
-                <div className="flex items-center justify-center size-14 rounded-full bg-gradient-to-br from-primary to-secondary text-white">
+                <div className="flex items-center justify-center size-14 rounded-full bg-gradient-to-br from-red-600 to-blue-800 text-white">
                   <svg
                     className="w-7 h-7"
                     fill="none"
@@ -111,10 +111,10 @@ export default function About() {
                   </svg>
                 </div>
                 <div>
-                  <div className="font-display text-2xl font-bold text-gray-900 dark:text-white">
+                  <div className="font-display text-2xl font-bold text-gray-900 ">
                     ISO 9001
                   </div>
-                  <div className="text-gray-600 dark:text-gray-400 text-sm">
+                  <div className="text-gray-600 text-sm">
                     Certified Quality
                   </div>
                 </div>
@@ -123,7 +123,7 @@ export default function About() {
 
             {/* Decorative elements */}
             <div className="absolute -top-6 -right-6 w-32 h-32 bg-accent/20 rounded-full blur-2xl"></div>
-            <div className="absolute -bottom-6 right-12 w-40 h-40 bg-primary/20 rounded-full blur-2xl"></div>
+            <div className="absolute -bottom-6 right-12 w-40 h-40 bg-red-600/20 rounded-full blur-2xl"></div>
           </div>
         </div>
       </div>

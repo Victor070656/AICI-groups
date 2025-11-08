@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { Eye, EyeOff } from "lucide-react";
 import LoginToggle from "./LoginToggle";
 
 export default function LoginForm() {
@@ -64,9 +65,7 @@ export default function LoginForm() {
                 onClick={() => setShowPassword(!showPassword)}
                 className="text-gray-500 dark:text-gray-400 flex border border-gray-300  bg-gray-50  items-center justify-center px-3 rounded-r-lg border-l-0 hover:text-gray-700 transition-colors"
               >
-                <span className="material-symbols-outlined">
-                  {showPassword ? "visibility_off" : "visibility"}
-                </span>
+                {showPassword ? <EyeOff className="w-5 h-5" /> : <Eye className="w-5 h-5" />}
               </button>
             </div>
           </label>

@@ -81,6 +81,8 @@ const properties = [
   },
 ];
 
+import { Bed, Bath, Maximize2 } from "lucide-react";
+
 export default function PropertyGrid() {
   return (
     <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
@@ -113,21 +115,15 @@ export default function PropertyGrid() {
               {/* Property Features */}
               <div className="mt-3 flex items-center gap-4 text-gray-600 ">
                 <div className="flex items-center gap-1.5">
-                  <span className="material-symbols-outlined text-lg text-blue-800">
-                    bed
-                  </span>
+                  <Bed className="w-4 h-4 text-blue-800" />
                   <span className="text-sm">{property.bedrooms}</span>
                 </div>
                 <div className="flex items-center gap-1.5">
-                  <span className="material-symbols-outlined text-lg text-blue-800">
-                    bathtub
-                  </span>
+                  <Bath className="w-4 h-4 text-blue-800" />
                   <span className="text-sm">{property.bathrooms}</span>
                 </div>
                 <div className="flex items-center gap-1.5">
-                  <span className="material-symbols-outlined text-lg text-blue-800">
-                    square_foot
-                  </span>
+                  <Maximize2 className="w-4 h-4 text-blue-800" />
                   <span className="text-sm">{property.sqft} sqft</span>
                 </div>
               </div>

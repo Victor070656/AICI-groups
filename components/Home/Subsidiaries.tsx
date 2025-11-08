@@ -7,21 +7,7 @@ const subsidiaries = [
       "https://lh3.googleusercontent.com/aida-public/AB6AXuD1X334oErFy5aa3hrHg37OmRfSpDljUFtGMOFQ0BOieSFAXajDemLg5YibYYRLUYJqWmTDb5zOYqWFr-0ppG-9iedcWjKS3c1noHIeGcABJfZmu1myJylTuvmPAceXXhN9CJciZQrKCgO9eEZ27BnZU9XMTCoFFz35TaXx0dopDmc1JeFmQV3OT71MZnt3icI__BZvXXduIz1GlK_69aOh0kQEdi2uZN74l8DY-C95QmneB7uJvQaofUVuY39y5BHR6fGRBxw4mRE",
     badge: "Premium",
     badgeColor: "bg-yellow-700",
-    icon: (
-      <svg
-        className="w-6 h-6"
-        fill="none"
-        stroke="currentColor"
-        viewBox="0 0 24 24"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth="2"
-          d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"
-        />
-      </svg>
-    ),
+    icon: <Building className="w-6 h-6" />,
     gradient: "from-red-600 to-blue-800",
   },
   {
@@ -32,21 +18,7 @@ const subsidiaries = [
       "https://lh3.googleusercontent.com/aida-public/AB6AXuC-5Wg1J8_BSklzeEzgBjAGQA2Y96N_u0pmRsizdPz_w_OghQrH6--lCWtwlJzobouQNsL4-W5_X6AL_oFyI4KL_MIsXGn2AL6zKGFe-75GckbrfDw_CU0daivGsQmd1FvUZsu1-aRWFGU7h9fHSBpfZF4SuMxGhFFUfWlZUo68HgRcfWHvjW5lE1grz8FNHv9i_RIEMNuVyfWZbTsy0AbXTOp-sGm-Zybtpm9rMuU9APmadn32QfqlSt8klOqCFQlnbHshNL2fPe8",
     badge: "Strategic",
     badgeColor: "bg-blue-800",
-    icon: (
-      <svg
-        className="w-6 h-6"
-        fill="none"
-        stroke="currentColor"
-        viewBox="0 0 24 24"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth="2"
-          d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"
-        />
-      </svg>
-    ),
+    icon: <Lightbulb className="w-6 h-6" />,
     gradient: "from-blue-800 to-red-600",
   },
   {
@@ -57,24 +29,12 @@ const subsidiaries = [
       "https://lh3.googleusercontent.com/aida-public/AB6AXuAFLnrxs9OI6ngf2eRvhdSpcPVGDHELOoNWJa-2Dq6NitTfMsyPWCZMcy0KBGmf2C4TrrnJ4g4tya1xcjlPKX9ziEXXJVsadG2s1RRaWVCSDRrCMKatRh6UcjuokFDEPBPllzszewGCiHs41MZKwCUVGiM5w4M8aYaLotI1pDfVoeHCSscCF7Xp3VXuxtYcFXDjLMHEqQHInABgK_1F_bcq7BBRcIT8PIdDGFNWqD90lz93kniEA3T3-7I42ohdJ1XpXqas_j2aLYU",
     badge: "Investment",
     badgeColor: "bg-yellow-700",
-    icon: (
-      <svg
-        className="w-6 h-6"
-        fill="none"
-        stroke="currentColor"
-        viewBox="0 0 24 24"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth="2"
-          d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-        />
-      </svg>
-    ),
+    icon: <DollarSign className="w-6 h-6" />,
     gradient: "from-yellow-700 to-red-600",
   },
 ];
+
+import { Building, Lightbulb, DollarSign, ChevronRight } from "lucide-react";
 
 export default function Subsidiaries() {
   return (
@@ -144,19 +104,7 @@ export default function Subsidiaries() {
                   className="inline-flex items-center gap-2 text-red-600 font-semibold text-sm group/link"
                 >
                   <span>Learn More</span>
-                  <svg
-                    className="w-4 h-4 transform transition-transform group-hover/link:translate-x-1"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M9 5l7 7-7 7"
-                    />
-                  </svg>
+                  <ChevronRight className="w-4 h-4 transform transition-transform group-hover/link:translate-x-1" />
                 </a>
               </div>
             </div>

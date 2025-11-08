@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { Search, ChevronDown } from "lucide-react";
 
 export default function CourseFilters() {
   const [searchQuery, setSearchQuery] = useState("");
@@ -23,7 +24,7 @@ export default function CourseFilters() {
           <label className="flex flex-col w-full h-12">
             <div className="flex w-full items-stretch rounded-lg h-full overflow-hidden shadow-sm">
               <div className="text-gray-500 flex bg-white items-center justify-center pl-4 border-r border-gray-200">
-                <span className="material-symbols-outlined">search</span>
+                <Search className="w-4 h-4" />
               </div>
               <input
                 className="flex w-full min-w-0 flex-1 resize-none overflow-hidden text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-800/50 border-none bg-white  h-full placeholder:text-gray-500 px-3 text-base font-normal font-body"
@@ -41,27 +42,21 @@ export default function CourseFilters() {
             <p className="text-gray-900 text-sm font-medium leading-normal font-body">
               {category === "all" ? "Category" : category}
             </p>
-            <span className="material-symbols-outlined text-gray-600 ">
-              expand_more
-            </span>
+            <ChevronDown className="w-4 h-4 text-gray-600" />
           </button>
 
           <button className="flex h-10 w-full items-center justify-between gap-x-2 rounded-lg bg-white  px-4 shadow-sm hover:bg-gray-50 transition-colors">
             <p className="text-gray-900 text-sm font-medium leading-normal font-body">
               {difficulty === "all" ? "Difficulty" : difficulty}
             </p>
-            <span className="material-symbols-outlined text-gray-600 ">
-              expand_more
-            </span>
+            <ChevronDown className="w-4 h-4 text-gray-600" />
           </button>
 
           <button className="flex h-10 w-full items-center justify-between gap-x-2 rounded-lg bg-white  px-4 shadow-sm hover:bg-gray-50 transition-colors">
             <p className="text-gray-900 text-sm font-medium leading-normal font-body">
               {dateFilter === "all" ? "Date" : dateFilter}
             </p>
-            <span className="material-symbols-outlined text-gray-600 ">
-              expand_more
-            </span>
+            <ChevronDown className="w-4 h-4 text-gray-600" />
           </button>
 
           <button

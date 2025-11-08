@@ -57,6 +57,8 @@ const teamMembers = [
   },
 ];
 
+import { ChevronRight } from "lucide-react";
+
 export default function TeamGrid() {
   return (
     <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 px-4 mb-8">
@@ -84,19 +86,7 @@ export default function TeamGrid() {
               className="text-blue-800 text-sm font-bold leading-normal hover:underline mt-2 inline-flex items-center gap-1 group/link"
             >
               <span>View Full Bio</span>
-              <svg
-                className="w-4 h-4 transform transition-transform group-hover/link:translate-x-1"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M9 5l7 7-7 7"
-                />
-              </svg>
+              <ChevronRight className="w-4 h-4 transform transition-transform group-hover/link:translate-x-1" />
             </a>
           </div>
         </div>

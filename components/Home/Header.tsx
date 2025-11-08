@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { MenuToggle } from "@/components/icons";
 
 export default function Header({ currentPage = "home" }) {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -62,40 +63,17 @@ export default function Header({ currentPage = "home" }) {
               </Link>
             ))}
           </div>
-          <Link href={"/login"} className="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-slate-800 text-white text-sm font-bold leading-normal tracking-[0.015em] font-body shadow-sm hover:bg-slate-800/90 transition-colors">
+          <Link href={"/login"} className="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-red-600 text-white text-sm font-bold leading-normal tracking-[0.015em] font-body shadow-sm hover:bg-red-600/90 transition-colors">
             <span className="truncate">Login</span>
           </Link>
         </div>
 
         {/* Mobile menu button */}
-        <button
+        <MenuToggle
+          isOpen={isMobileMenuOpen}
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-          className="md:hidden p-2 text-gray-700"
-          aria-label="Toggle menu"
-        >
-          <svg
-            className="w-6 h-6"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-          >
-            {isMobileMenuOpen ? (
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M6 18L18 6M6 6l12 12"
-              />
-            ) : (
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M4 6h16M4 12h16M4 18h16"
-              />
-            )}
-          </svg>
-        </button>
+          className="md:hidden"
+        />
       </div>
 
       {/* Mobile menu */}
@@ -116,7 +94,7 @@ export default function Header({ currentPage = "home" }) {
                 {item.name}
               </Link>
             ))}
-            <Link href={"/login"} className="flex items-center justify-center rounded-lg h-10 px-4 bg-slate-800 text-white text-sm font-bold shadow-sm hover:bg-slate-800/90 transition-colors w-full mt-2">
+            <Link href={"/login"} className="flex items-center justify-center rounded-lg h-10 px-4 bg-red-600 text-white text-sm font-bold shadow-sm hover:bg-red-600/90 transition-colors w-full mt-2">
               <span>Login</span>
             </Link>
           </nav>

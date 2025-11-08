@@ -1,23 +1,25 @@
+import { MapPin, Phone, Mail, Clock } from "lucide-react";
+
 const contactDetails = [
   {
-    icon: "location_on",
+    icon: <MapPin className="w-5 h-5" />,
     label: "Address",
     value: "123 Realty Avenue, Suite 100, Metro City, 12345",
   },
   {
-    icon: "call",
+    icon: <Phone className="w-5 h-5" />,
     label: "Phone",
     value: "+1 (555) 123-4567",
     href: "tel:+15551234567",
   },
   {
-    icon: "mail",
+    icon: <Mail className="w-5 h-5" />,
     label: "Email",
     value: "contact@aicigroup.com",
     href: "mailto:contact@aicigroup.com",
   },
   {
-    icon: "schedule",
+    icon: <Clock className="w-5 h-5" />,
     label: "Business Hours",
     value: "Monday - Friday: 9:00 AM - 6:00 PM",
   },
@@ -37,9 +39,9 @@ export default function ContactInfo() {
                 key={index}
                 className="flex items-start gap-4 p-4 rounded-lg bg-red-600/5 border border-red-600/10 "
               >
-                <span className="material-symbols-outlined mt-1 text-red-600">
+                <div className="mt-1 text-red-600">
                   {detail.icon}
-                </span>
+                </div>
                 <div>
                   <p className="text-gray-600 text-sm font-normal">
                     {detail.label}

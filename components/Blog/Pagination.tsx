@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 
 
 export default function Pagination({ totalPages = 8 }) {
@@ -20,7 +21,7 @@ export default function Pagination({ totalPages = 8 }) {
         className="flex size-10 items-center justify-center text-gray-700  hover:bg-gray-100 rounded-full transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
         aria-label="Previous page"
       >
-        <span className="material-symbols-outlined text-xl">chevron_left</span>
+        <ChevronLeft className="w-5 h-5" />
       </button>
 
       {/* Page 1 */}
@@ -118,7 +119,7 @@ export default function Pagination({ totalPages = 8 }) {
         className="flex size-10 items-center justify-center text-gray-700 hover:bg-gray-100 rounded-full transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
         aria-label="Next page"
       >
-        <span className="material-symbols-outlined text-xl">chevron_right</span>
+        <ChevronRight className="w-5 h-5" />
       </button>
     </div>
   );

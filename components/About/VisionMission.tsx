@@ -1,13 +1,15 @@
+import { Eye, Flag } from "lucide-react";
+
 export default function VisionMission() {
   const items = [
     {
-      icon: "visibility",
+      icon: <Eye className="w-8 h-8" />,
       title: "Our Vision",
       description:
         "To be the leading and most trusted real estate consultancy, shaping skylines and building sustainable communities for future generations.",
     },
     {
-      icon: "flag",
+      icon: <Flag className="w-8 h-8" />,
       title: "Our Mission",
       description:
         "To provide exceptional, client-centric real estate solutions through integrity, innovation, and unparalleled market expertise.",
@@ -34,9 +36,7 @@ export default function VisionMission() {
             className="flex flex-1 gap-4 rounded-xl border border-gray-200  bg-white p-6 flex-col shadow-md hover:shadow-lg transition-shadow duration-300"
           >
             <div className="flex items-center justify-center size-16 rounded-full bg-red-600/10 text-red-600">
-              <span className="material-symbols-outlined text-4xl">
-                {item.icon}
-              </span>
+              {item.icon}
             </div>
             <div className="flex flex-col gap-2">
               <h3 className="text-xl font-bold leading-tight font-display text-gray-900 ">

@@ -1,3 +1,5 @@
+import { ArrowRight, Play, Star, CheckCircle, DollarSign } from "lucide-react";
+
 export default function Hero() {
   return (
     <section className="relative overflow-hidden">
@@ -41,25 +43,11 @@ export default function Hero() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center mt-6">
             <button className="btn-premium group flex items-center justify-center gap-3 overflow-hidden rounded-full h-14 px-10 bg-white text-secondary text-base font-semibold shadow-2xl hover:shadow-white/20">
               <span>Explore Our Services</span>
-              <svg
-                className="w-5 h-5 transform transition-transform group-hover:translate-x-1"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M17 8l4 4m0 0l-4 4m4-4H3"
-                />
-              </svg>
+              <ArrowRight className="w-5 h-5 transform transition-transform group-hover:translate-x-1" />
             </button>
 
             <button className="flex items-center justify-center gap-3 rounded-full h-14 px-10 bg-white/10 backdrop-blur-sm border-2 border-white/30 text-white text-base font-semibold hover:bg-white/20 transition-all duration-300">
-              <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M8 5v14l11-7z" />
-              </svg>
+              <Play className="w-6 h-6" />
               <span>Watch Video</span>
             </button>
           </div>
@@ -67,45 +55,15 @@ export default function Hero() {
           {/* Trust badges */}
           <div className="flex flex-wrap items-center justify-center gap-8 mt-12 text-white/90 text-sm">
             <div className="flex items-center gap-2">
-              <svg
-                className="w-5 h-5 text-accent"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-              >
-                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-              </svg>
+              <Star className="w-5 h-5 text-accent" />
               <span>4.9/5 Client Rating</span>
             </div>
             <div className="flex items-center gap-2">
-              <svg
-                className="w-5 h-5 text-accent"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                />
-              </svg>
+              <CheckCircle className="w-5 h-5 text-accent" />
               <span>500+ Projects Completed</span>
             </div>
             <div className="flex items-center gap-2">
-              <svg
-                className="w-5 h-5 text-accent"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                />
-              </svg>
+              <DollarSign className="w-5 h-5 text-accent" />
               <span>$2B+ Assets Managed</span>
             </div>
           </div>

@@ -1,29 +1,25 @@
-import { Shield, Lightbulb, Users, Handshake } from "lucide-react";
+import { Shield, Award, Lightbulb, Users } from "lucide-react";
 
 const values = [
   {
     title: "Integrity",
-    description:
-      "We uphold the highest standards of integrity in all of our actions, building trust through transparency.",
+    description: "Acting with honesty and transparency.",
     icon: Shield,
   },
   {
+    title: "Excellence",
+    description: "Delivering quality beyond expectations.",
+    icon: Award,
+  },
+  {
     title: "Innovation",
-    description:
-      "We pursue new creative ideas that have the potential to change the world and drive progress.",
+    description: "Providing forward-thinking, practical solutions.",
     icon: Lightbulb,
   },
   {
-    title: "Client-Centric",
-    description:
-      "Our clients are at the heart of everything we do, inspiring us to exceed expectations.",
+    title: "Collaboration",
+    description: "Building strong partnerships with clients and stakeholders.",
     icon: Users,
-  },
-  {
-    title: "Partnership",
-    description:
-      "We build lasting relationships based on trust, mutual respect, and shared success.",
-    icon: Handshake,
   },
 ];
 

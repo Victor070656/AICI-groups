@@ -82,59 +82,59 @@ const properties = [
 ];
 
 import { Bed, Bath, Maximize2 } from "lucide-react";
+import Link from "next/link";
 
 export default function PropertyGrid() {
   return (
     <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
       {properties.map((property, index) => (
-        <article
-          key={index}
-          className="flex flex-col overflow-hidden rounded-lg bg-gray-50 shadow-sm transition-all duration-300 hover:shadow-lg hover:-translate-y-1"
-        >
-          {/* Property Image */}
-          <div className="relative w-full">
-            <div
-              className="aspect-video w-full bg-cover bg-center"
-              style={{ backgroundImage: `url("${property.image}")` }}
-            />
-            <div className="absolute top-3 left-3 rounded bg-red-600/90 px-2 py-1 text-xs font-bold uppercase tracking-wider text-white">
-              {property.badge}
-            </div>
-          </div>
-
-          {/* Property Details */}
-          <div className="flex flex-1 flex-col p-4">
-            <div className="flex-1">
-              <p className="font-display text-lg font-bold text-gray-900 ">
-                {property.title}
-              </p>
-              <p className="mt-1 text-xl font-bold text-blue-800">
-                {property.price}
-              </p>
-
-              {/* Property Features */}
-              <div className="mt-3 flex items-center gap-4 text-gray-600 ">
-                <div className="flex items-center gap-1.5">
-                  <Bed className="w-4 h-4 text-blue-800" />
-                  <span className="text-sm">{property.bedrooms}</span>
-                </div>
-                <div className="flex items-center gap-1.5">
-                  <Bath className="w-4 h-4 text-blue-800" />
-                  <span className="text-sm">{property.bathrooms}</span>
-                </div>
-                <div className="flex items-center gap-1.5">
-                  <Maximize2 className="w-4 h-4 text-blue-800" />
-                  <span className="text-sm">{property.sqft} sqft</span>
-                </div>
+        <Link href={`/property/${index + 1}`} key={index}>
+          <article className="flex flex-col overflow-hidden rounded-lg bg-gray-50 shadow-sm transition-all duration-300 hover:shadow-lg hover:-translate-y-1">
+            {/* Property Image */}
+            <div className="relative w-full">
+              <div
+                className="aspect-video w-full bg-cover bg-center"
+                style={{ backgroundImage: `url("${property.image}")` }}
+              />
+              <div className="absolute top-3 left-3 rounded bg-red-600/90 px-2 py-1 text-xs font-bold uppercase tracking-wider text-white">
+                {property.badge}
               </div>
             </div>
 
-            {/* CTA Button */}
-            <button className="mt-4 flex w-full items-center justify-center rounded-lg bg-red-600 py-2.5 text-sm font-bold text-white transition-opacity hover:opacity-90">
-              View Details
-            </button>
-          </div>
-        </article>
+            {/* Property Details */}
+            <div className="flex flex-1 flex-col p-4">
+              <div className="flex-1">
+                <p className="font-display text-lg font-bold text-gray-900 ">
+                  {property.title}
+                </p>
+                <p className="mt-1 text-xl font-bold text-blue-800">
+                  {property.price}
+                </p>
+
+                {/* Property Features */}
+                <div className="mt-3 flex items-center gap-4 text-gray-600 ">
+                  <div className="flex items-center gap-1.5">
+                    <Bed className="w-4 h-4 text-blue-800" />
+                    <span className="text-sm">{property.bedrooms}</span>
+                  </div>
+                  <div className="flex items-center gap-1.5">
+                    <Bath className="w-4 h-4 text-blue-800" />
+                    <span className="text-sm">{property.bathrooms}</span>
+                  </div>
+                  <div className="flex items-center gap-1.5">
+                    <Maximize2 className="w-4 h-4 text-blue-800" />
+                    <span className="text-sm">{property.sqft} sqft</span>
+                  </div>
+                </div>
+              </div>
+
+              {/* CTA Button */}
+              <div className="mt-4 flex w-full items-center justify-center rounded-lg bg-red-600 py-2.5 text-sm font-bold text-white transition-opacity hover:opacity-90">
+                View Details
+              </div>
+            </div>
+          </article>
+        </Link>
       ))}
     </div>
   );

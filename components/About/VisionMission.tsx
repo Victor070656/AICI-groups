@@ -6,13 +6,13 @@ export default function VisionMission() {
       icon: <Eye className="w-8 h-8" />,
       title: "Our Vision",
       description:
-        "To be the leading and most trusted real estate consultancy, shaping skylines and building sustainable communities for future generations.",
+        "To be Africa's leading indigenous business management and consulting group, delivering innovative, sustainable, and value-driven solutions across diverse industries.",
     },
     {
       icon: <Flag className="w-8 h-8" />,
       title: "Our Mission",
       description:
-        "To provide exceptional, client-centric real estate solutions through integrity, innovation, and unparalleled market expertise.",
+        "To empower clients with tailored consulting and management solutions, built on trusted expertise, professionalism, and innovation, while creating long-term value through strategic partnerships.",
     },
   ];
 

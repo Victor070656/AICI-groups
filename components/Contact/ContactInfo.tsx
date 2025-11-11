@@ -4,19 +4,20 @@ const contactDetails = [
   {
     icon: <MapPin className="w-5 h-5" />,
     label: "Address",
-    value: "123 Realty Avenue, Suite 100, Metro City, 12345",
+    value:
+      "Suite FF-18, Hakeem Dickson Drive, Off TF Kuboye Street, Oniru–Lekki Phase 1, Lagos, Nigeria",
   },
   {
     icon: <Phone className="w-5 h-5" />,
     label: "Phone",
-    value: "+1 (555) 123-4567",
-    href: "tel:+15551234567",
+    value: "+234 (0) 9033145286",
+    href: "tel:+2349033145286",
   },
   {
     icon: <Mail className="w-5 h-5" />,
     label: "Email",
-    value: "contact@aicigroup.com",
-    href: "mailto:contact@aicigroup.com",
+    value: "info@aicigoc.com",
+    href: "mailto:info@aicigoc.com",
   },
   {
     icon: <Clock className="w-5 h-5" />,
@@ -39,9 +40,7 @@ export default function ContactInfo() {
                 key={index}
                 className="flex items-start gap-4 p-4 rounded-lg bg-red-600/5 border border-red-600/10 "
               >
-                <div className="mt-1 text-red-600">
-                  {detail.icon}
-                </div>
+                <div className="mt-1 text-red-600">{detail.icon}</div>
                 <div>
                   <p className="text-gray-600 text-sm font-normal">
                     {detail.label}

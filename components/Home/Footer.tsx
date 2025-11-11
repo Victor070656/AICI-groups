@@ -68,15 +68,14 @@ export default function Footer() {
               </h4>
               <ul className="space-y-4 font-sans text-sm text-gray-400">
                 <ContactItem icon={<LocationIcon />}>
-                  123 Business Rd, Suite 100
-                  <br />
-                  New York, NY 10001
+                  Suite FF-18, Hakeem Dickson Drive, Off TF Kuboye Street,
+                  Oniru–Lekki Phase 1, Lagos, Nigeria
                 </ContactItem>
                 <ContactItem icon={<PhoneIcon />}>
-                  (123) 456-7890
+                  +234 (0) 9033145286
                 </ContactItem>
                 <ContactItem icon={<EmailIcon />}>
-                  contact@aicigroup.com
+                  info@aicigoc.com
                 </ContactItem>
               </ul>
             </div>

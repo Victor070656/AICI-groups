@@ -1,31 +1,33 @@
 const values = [
   {
     title: "Integrity",
-    description:
-      "We uphold the highest standards of honesty and ethical behavior in all of our actions.",
-    image:
-      "/work/img/02.jpeg",
+    description: "Acting with honesty and transparency.",
+    image: "/work/img/02.jpeg",
   },
   {
     title: "Excellence",
-    description:
-      "We are committed to quality and strive for the best in everything we do.",
-    image:
-      "/work/img/03.jpeg",
+    description: "Delivering quality beyond expectations.",
+    image: "/work/img/03.jpeg",
   },
   {
     title: "Innovation",
-    description:
-      "We embrace new ideas and technologies to drive progress and create value.",
-    image:
-      "/work/img/04.jpeg",
+    description: "Providing forward-thinking, practical solutions.",
+    image: "/work/img/04.jpeg",
   },
   {
-    title: "Partnership",
-    description:
-      "We believe in building lasting relationships with our clients and partners based on trust.",
-    image:
-      "/work/img/05.jpeg",
+    title: "Collaboration",
+    description: "Building strong partnerships with clients and stakeholders.",
+    image: "/work/img/05.jpeg",
+  },
+  {
+    title: "Sustainability",
+    description: "Creating long-term value for clients and communities.",
+    image: "/work/img/06.jpeg",
+  },
+  {
+    title: "Professionalism",
+    description: "Upholding the highest service standards.",
+    image: "/work/img/07.jpeg",
   },
 ];
 
@@ -39,7 +41,7 @@ export default function CoreValues() {
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {values.map((value, index) => (
             <div
               key={index}

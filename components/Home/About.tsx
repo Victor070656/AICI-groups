@@ -18,24 +18,25 @@ export default function About() {
             </div>
 
             <p className="font-sans text-gray-600  text-lg font-light leading-relaxed">
-              AICI Group is a premier real estate and consultancy firm dedicated
-              to delivering exceptional value to our clients. With a rich
-              history of integrity and a future-focused vision, we specialize in
-              creating strategic solutions across our diverse portfolio of
-              services.
+              AICI Group provides comprehensive, value-driven solutions to
+              individuals, families, and corporate organizations. We combine
+              deep industry knowledge, innovative approaches, and a
+              client-centric culture to ensure sustainable growth and long-term
+              value for clients.
             </p>
 
             <p className="font-sans text-gray-600  text-lg font-light leading-relaxed">
-              Our commitment to excellence ensures we achieve outstanding
-              results in every project we undertake, building lasting
-              partnerships that stand the test of time.
+              We are driven by a vision to empower individuals, families, and
+              institutions to achieve sustainable growth and long-term impact
+              through structured management, disciplined governance, and
+              strategic advisory.
             </p>
 
             {/* Stats */}
             <div className="grid grid-cols-3 gap-6 py-8">
               <div className="text-center">
                 <div className="font-display text-4xl font-bold gradient-text">
-                  25+
+                  15+
                 </div>
                 <div className="text-gray-600 text-sm mt-2">
                   Years Experience

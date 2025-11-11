@@ -1,33 +1,33 @@
 const subsidiaries = [
   {
-    title: "AICI Real Estate",
+    title: "AICI Properties Limited",
     description:
-      "Specializing in premier residential and commercial properties with unmatched market expertise.",
+      "Specializing in estate management, property administration, and real estate investment services across Nigeria.",
     image:
       "https://lh3.googleusercontent.com/aida-public/AB6AXuD1X334oErFy5aa3hrHg37OmRfSpDljUFtGMOFQ0BOieSFAXajDemLg5YibYYRLUYJqWmTDb5zOYqWFr-0ppG-9iedcWjKS3c1noHIeGcABJfZmu1myJylTuvmPAceXXhN9CJciZQrKCgO9eEZ27BnZU9XMTCoFFz35TaXx0dopDmc1JeFmQV3OT71MZnt3icI__BZvXXduIz1GlK_69aOh0kQEdi2uZN74l8DY-C95QmneB7uJvQaofUVuY39y5BHR6fGRBxw4mRE",
-    badge: "Premium",
+    badge: "Real Estate",
     badgeColor: "bg-yellow-700",
     icon: <Building className="w-6 h-6" />,
     gradient: "from-red-600 to-blue-800",
   },
   {
-    title: "AICI Consulting",
+    title: "AICI Management Consult & Financial Advisory",
     description:
-      "Providing expert strategic advice for sustainable business growth and transformation.",
+      "Strategic business consulting, financial planning, and investment advisory for private and corporate clients.",
     image:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuC-5Wg1J8_BSklzeEzgBjAGQA2Y96N_u0pmRsizdPz_w_OghQrH6--lCWtwlJzobouQNsL4-W5_X6AL_oFyI4KL_MIsXGn2AL6zKGFe-75GckbrfDw_CU0daivGsQmd1FvUZsu1-aRWFGU7h9fHSBpfZF4SuMxGhFFUfWlZUo68HgRcfWHvjW5lE1grz8FNHv9i_RIEMNuVyfWZbTsy0AbXTOp-sGm-Zybtpm9rMuU9APmadn32QfqlSt8klOqCFQlnbHshNL2fPe8",
-    badge: "Strategic",
+      "https://lh3.googleusercontent.com/aida-public/AB6AXuC-5Wg1J8_BSklzeEzgBjAGQA2Y96N_u0pmRsizdPz_w_OghQrH6--lCWtwlJzobouQNsL4-W5_X6AL_oFyI4KL_MIsXGn2AL6zKGFe-75GckbrfDw_CU0daivGsQmd1FvUZsu1-aRWFGU7h9fHSBpfZF4SuMxGhFFUfWlZUo68HgRcfWHvjW5lEgrz8FNHv9i_RIEMNuVyfWZbTsy0AbXTOp-sGm-Zybtpm9rMuU9APmadn32QfqlSt8klOqCFQlnbHshNL2fPe8",
+    badge: "Consulting",
     badgeColor: "bg-blue-800",
     icon: <Lightbulb className="w-6 h-6" />,
     gradient: "from-blue-800 to-red-600",
   },
   {
-    title: "AICI Capital",
+    title: "AICI Projects & Construction",
     description:
-      "Innovative financial solutions tailored to maximize your investment potential.",
+      "Covering residential and commercial building, renovations, and civil engineering projects.",
     image:
       "https://lh3.googleusercontent.com/aida-public/AB6AXuAFLnrxs9OI6ngf2eRvhdSpcPVGDHELOoNWJa-2Dq6NitTfMsyPWCZMcy0KBGmf2C4TrrnJ4g4tya1xcjlPKX9ziEXXJVsadG2s1RRaWVCSDRrCMKatRh6UcjuokFDEPBPllzszewGCiHs41MZKwCUVGiM5w4M8aYaLotI1pDfVoeHCSscCF7Xp3VXuxtYcFXDjLMHEqQHInABgK_1F_bcq7BBRcIT8PIdDGFNWqD90lz93kniEA3T3-7I42ohdJ1XpXqas_j2aLYU",
-    badge: "Investment",
+    badge: "Construction",
     badgeColor: "bg-yellow-700",
     icon: <DollarSign className="w-6 h-6" />,
     gradient: "from-yellow-700 to-red-600",

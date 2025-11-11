@@ -10,11 +10,14 @@ export default function AboutHero() {
       >
         <div className="flex flex-col gap-4 max-w-3xl z-10">
           <h1 className="text-white text-4xl font-black leading-tight tracking-tight sm:text-5xl md:text-6xl font-display">
-            Building the Future of Real Estate
+            Comprehensive, Value-Driven Solutions
           </h1>
           <p className="text-white/95 text-base font-normal leading-relaxed sm:text-lg md:text-xl font-body">
-            Discover AICI Group&apos;s legacy and commitment to excellence in
-            the real estate sector.
+            AICI Group provides comprehensive, value-driven solutions to
+            individuals, families, and corporate organizations. We combine deep
+            industry knowledge, innovative approaches, and a client-centric
+            culture to ensure sustainable growth and long-term value for
+            clients.
           </p>
         </div>
       </div>

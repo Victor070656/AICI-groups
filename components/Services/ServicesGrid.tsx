@@ -1,41 +1,48 @@
-import { Building, Building2, BarChart3, TrendingUp, Scale, Home } from "lucide-react";
+import {
+  Building,
+  Building2,
+  BarChart3,
+  TrendingUp,
+  Scale,
+  Home,
+} from "lucide-react";
 
 const services = [
   {
-    icon: Building,
-    title: "Real Estate Brokerage",
+    icon: BarChart3,
+    title: "AICI Management Consult & Financial Advisory Services",
     description:
-      "Expert guidance for buying, selling, and leasing residential and commercial properties.",
+      "Strategic business consulting, financial planning, and investment advisory for private and corporate clients.",
+  },
+  {
+    icon: Building,
+    title: "AICI Properties Limited",
+    description:
+      "Specializing in estate management, property administration, and real estate investment services across Nigeria.",
   },
   {
     icon: Building2,
-    title: "Property Management",
+    title: "AICI Projects & Construction Limited",
     description:
-      "Comprehensive services for property owners to maximize returns and ensure peace of mind.",
-  },
-  {
-    icon: BarChart3,
-    title: "Market Analysis & Research",
-    description:
-      "Data-driven insights and detailed market reports to inform your investment decisions.",
-  },
-  {
-    icon: TrendingUp,
-    title: "Investment Consultancy",
-    description:
-      "Strategic advisory services for building and managing a successful real estate portfolio.",
-  },
-  {
-    icon: Scale,
-    title: "Legal & Financial Advisory",
-    description:
-      "Access our network of partners for seamless legal and financial guidance through every transaction.",
+      "Covering residential and commercial building, renovations, and civil engineering projects.",
   },
   {
     icon: Home,
-    title: "Development & Planning",
+    title: "AICI Facility & Property Administration Services",
     description:
-      "End-to-end support for new construction projects, from initial concept to final execution.",
+      "Ensuring sustainable, safe, and efficient property operations and technical support.",
+  },
+  {
+    icon: Scale,
+    title: "AICMRCY Supply Chain and Capacity Consultancy",
+    description:
+      "Dedicated to optimizing supply chains, improving operational capacity, and enhancing organizational performance.",
+  },
+  {
+    icon: TrendingUp,
+    title: "AICI Multi-Family Office Services Limited",
+    description:
+      "Providing bespoke family office administration and wealth management solutions for high-net-worth families.",
   },
 ];
 
@@ -44,7 +51,7 @@ export default function ServicesGrid() {
     <div className="py-16 md:py-24">
       <div className="text-center mb-12">
         <h2 className="text-blue-800 text-3xl md:text-4xl font-bold font-display leading-tight tracking-tight">
-          Comprehensive Real Estate & Consultancy Services
+          Our Specialized Subsidiaries
         </h2>
       </div>
 

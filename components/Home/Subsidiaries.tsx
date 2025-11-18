@@ -1,40 +1,51 @@
+import { Building, Lightbulb, Package, Crown, ChevronRight } from "lucide-react";
+
 const subsidiaries = [
   {
     title: "AICI Properties Limited",
     description:
       "Specializing in estate management, property administration, and real estate investment services across Nigeria.",
-    image:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuD1X334oErFy5aa3hrHg37OmRfSpDljUFtGMOFQ0BOieSFAXajDemLg5YibYYRLUYJqWmTDb5zOYqWFr-0ppG-9iedcWjKS3c1noHIeGcABJfZmu1myJylTuvmPAceXXhN9CJciZQrKCgO9eEZ27BnZU9XMTCoFFz35TaXx0dopDmc1JeFmQV3OT71MZnt3icI__BZvXXduIz1GlK_69aOh0kQEdi2uZN74l8DY-C95QmneB7uJvQaofUVuY39y5BHR6fGRBxw4mRE",
+    image: "/work/img/08.jpeg",
     badge: "Real Estate",
     badgeColor: "bg-yellow-700",
     icon: <Building className="w-6 h-6" />,
     gradient: "from-red-600 to-blue-800",
+    href: "/subsidiaries/aici-properties",
   },
   {
     title: "AICI Management Consult & Financial Advisory",
     description:
       "Strategic business consulting, financial planning, and investment advisory for private and corporate clients.",
-    image:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuC-5Wg1J8_BSklzeEzgBjAGQA2Y96N_u0pmRsizdPz_w_OghQrH6--lCWtwlJzobouQNsL4-W5_X6AL_oFyI4KL_MIsXGn2AL6zKGFe-75GckbrfDw_CU0daivGsQmd1FvUZsu1-aRWFGU7h9fHSBpfZF4SuMxGhFFUfWlZUo68HgRcfWHvjW5lEgrz8FNHv9i_RIEMNuVyfWZbTsy0AbXTOp-sGm-Zybtpm9rMuU9APmadn32QfqlSt8klOqCFQlnbHshNL2fPe8",
+    image: "/work/img/15.jpeg",
     badge: "Consulting",
     badgeColor: "bg-blue-800",
     icon: <Lightbulb className="w-6 h-6" />,
     gradient: "from-blue-800 to-red-600",
+    href: "/subsidiaries/amc-fas",
   },
   {
-    title: "AICI Projects & Construction",
+    title: "AICMRCY Supply Chain & Capacity Consultancy",
     description:
-      "Covering residential and commercial building, renovations, and civil engineering projects.",
-    image:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuAFLnrxs9OI6ngf2eRvhdSpcPVGDHELOoNWJa-2Dq6NitTfMsyPWCZMcy0KBGmf2C4TrrnJ4g4tya1xcjlPKX9ziEXXJVsadG2s1RRaWVCSDRrCMKatRh6UcjuokFDEPBPllzszewGCiHs41MZKwCUVGiM5w4M8aYaLotI1pDfVoeHCSscCF7Xp3VXuxtYcFXDjLMHEqQHInABgK_1F_bcq7BBRcIT8PIdDGFNWqD90lz93kniEA3T3-7I42ohdJ1XpXqas_j2aLYU",
-    badge: "Construction",
-    badgeColor: "bg-yellow-700",
-    icon: <DollarSign className="w-6 h-6" />,
-    gradient: "from-yellow-700 to-red-600",
+      "Dedicated to optimizing supply chains, improving operational capacity, and enhancing organizational performance across industries.",
+    image: "/work/img/18.jpeg",
+    badge: "Supply Chain",
+    badgeColor: "bg-green-700",
+    icon: <Package className="w-6 h-6" />,
+    gradient: "from-green-700 to-blue-800",
+    href: "/subsidiaries/aicmrcy",
+  },
+  {
+    title: "AICI Multi-Family Office Services Limited",
+    description:
+      "Bespoke family office administration and wealth management solutions for high-net-worth families and private clients.",
+    image: "/work/img/10.jpeg",
+    badge: "Family Office",
+    badgeColor: "bg-purple-700",
+    icon: <Crown className="w-6 h-6" />,
+    gradient: "from-purple-700 to-red-600",
+    href: "/subsidiaries/am-fosltd",
   },
 ];
-
-import { Building, Lightbulb, DollarSign, ChevronRight } from "lucide-react";
 
 export default function Subsidiaries() {
   return (
@@ -62,7 +73,7 @@ export default function Subsidiaries() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {subsidiaries.map((subsidiary, index) => (
             <div
               key={index}
@@ -85,22 +96,22 @@ export default function Subsidiaries() {
 
               <div className="p-8">
                 <div className="flex items-center gap-3 mb-4">
-                  <div
+                  {/* <div
                     className={`flex items-center justify-center size-12 rounded-xl bg-gradient-to-br ${subsidiary.gradient} text-white`}
                   >
                     {subsidiary.icon}
-                  </div>
-                  <h3 className="font-display text-gray-900 text-2xl font-bold">
+                  </div> */}
+                  <h3 className="font-display text-gray-900 text-xl font-bold leading-tight">
                     {subsidiary.title}
                   </h3>
                 </div>
 
-                <p className="font-sans text-gray-600 text-base leading-relaxed mb-6">
+                <p className="font-sans text-gray-600 text-sm leading-relaxed mb-6">
                   {subsidiary.description}
                 </p>
 
                 <a
-                  href="#"
+                  href={subsidiary.href}
                   className="inline-flex items-center gap-2 text-red-600 font-semibold text-sm group/link"
                 >
                   <span>Learn More</span>
